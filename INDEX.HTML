@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Weather App - DevForge India</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@100..900&display=swap" rel="stylesheet">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/lottie-web/5.13.0/lottie.min.js" integrity="sha512-uOtp2vx2X/5+tLBEf5UoQyqwAkFZJBM5XwGa7BfXDnWR+wdpRvlSVzaIVcRe3tGNsStu6UMDCeXKEnr4IBT8gA==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+</head>
+<body>
+    
+    <div class="app-container">
+        <div class="background-animation" id="backgroundAnimation"></div>
+
+        <div class="search-container" id="searchContainer">
+            <input type="text" id="cityInput" placeholder="Enter city name...">
+            <button onclick="getWeatherData()">Search</button>
+        </div>
+
+        <div class="weather-card hidden" id="weatherCard">
+            <div class="location-time">
+                <h1 id="city">City, Country</h1>
+                <p id="time">0:00 - Thursday</p>
+            </div>
+
+            <div class="weather-main">
+                <img src="assets/icons/clear.png" alt="Weather Icon" id="weatherIcon">
+                <h1 id="temperature">25°C</h1>
+                <p id="description">Weather Description</p>
+            </div>
+
+            <div class="weather-detail">
+                <div class="detail-card">Humidity: <span id="humidity">45%</span></div>
+                <div class="detail-card">Wind: <span id="wind">6 Km/H</span></div>
+                <div class="detail-card">Visibility: <span id="visibility">5 Km</span></div>
+                <div class="detail-card">Pressure: <span id="pressure">1000 hPa</span></div>
+            </div>
+        </div>
+        <p class="error-messsage" id="errorMessage"></p>
+    </div>
+
+
+    <script src="script.js"></script>
+</body>
+</html>
