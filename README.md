@@ -14,5 +14,5 @@ This project is a Weather Forecasting application that provides real-time weathe
 ---
 
 ## 🛠 Tech Stack
-- Frontend: HTML, CSS, JavaScript  
-
+- Frontend: HTML, CSS, JavaScript
+- API: OpenWeatherMap API  
